@@ -44,4 +44,17 @@ def shift_break(cyphertext):
             return i 
 ```
 
-This function when ran on an appropriate cyphertext will return the integer that is statistically most likely to be the shift key, which will be between 0 and 25. 
+This function when ran on an appropriate cyphertext will return the integer that is statistically most likely to be the shift key, which will be between 0 and 25. The following testing code on a sample string:
+```
+    string = 'thebigoxmoxadvisedhernottodosobecausetherewerethousandsofbadcommas'
+    cyphertext = shift_encrypt(string, 4)
+    print("Plaintext: ", string)
+    print('Cyphertext Using 4 as the Key: ', cyphertext)
+    print('The Broken Key is: ', shift_break(cyphertext))
+```
+produces the following output
+```
+Plaintext:  thebigoxmoxadvisedhernottodosobecausetherewerethousandsofbadcommas
+Cyphertext Using 4 as the Key:  xlifmksbqsbehzmwihlivrsxxshswsfigeywixliviaivixlsywerhwsjfehgsqqew
+The Broken Key is:  4
+```
