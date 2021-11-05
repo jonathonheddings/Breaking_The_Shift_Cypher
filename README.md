@@ -37,7 +37,7 @@ def shift_break(cyphertext):
         tot_list.append(abs(total - 0.065))
         total = 0
 
-    # Find the position of the minimum balue.
+    # Find the position of the minimum value.
     minimum = min(tot_list)
     for i in range(0,26):
         if (tot_list[i] == minimum):
