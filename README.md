@@ -52,7 +52,7 @@ This function when ran on an appropriate cyphertext will return the integer that
     print('Cyphertext Using 4 as the Key: ', cyphertext)
     print('The Broken Key is: ', shift_break(cyphertext))
 ```
-produces the following output
+Produces the following output:
 ```
 Plaintext:  thebigoxmoxadvisedhernottodosobecausetherewerethousandsofbadcommas
 Cyphertext Using 4 as the Key:  xlifmksbqsbehzmwihlivrsxxshswsfigeywixliviaivixlsywerhwsjfehgsqqew
