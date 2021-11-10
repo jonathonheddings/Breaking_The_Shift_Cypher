@@ -19,7 +19,7 @@ This is a simple project to break the Shift Cypher using basic frequency analysi
     then the result will be closest to 0.065 when the cyphertext frequencies are shifted by the key.
 
 #### Key Recovery Function
-```
+```python
 def shift_break(cyphertext):
     # Temp variables
     total, tot_list = 0, []
@@ -45,7 +45,7 @@ def shift_break(cyphertext):
 ```
 
 This function when ran on an appropriate cyphertext will return the integer that is statistically most likely to be the shift key, which will be between 0 and 25. The following testing code on a sample string:
-```
+```python
     string = 'thebigoxmoxadvisedhernottodosobecausetherewerethousandsofbadcommas'
     cyphertext = shift_encrypt(string, 4)
     print("Plaintext: ", string)
